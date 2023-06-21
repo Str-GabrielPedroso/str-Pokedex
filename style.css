@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: azure;
+    text-shadow: 2px 2px 0px #252d3d;
+}
+
+header .pokemon-logo {
+    width: 230px;
+    height: auto;
+    margin: 20px auto 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    background-color: rgba(111, 188, 211, 0.61);
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 25px;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(5deg, transparent 50%, rgba(0, 0, 0, 0.1) 50%);
+    background-size: 1px 8px;
+    height: 10vh;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cardPokemon {
+    background-color: rgb(113, 191, 236);
+    border-radius: 50px;
+    border: solid 2px #0a366e;
+    box-shadow: 3px 3px 2px #767a7c;
+    display: flex;
+    width: 90%;
+    max-width: 280px;
+    height: 80px;
+    margin: 10px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.cardPokemon .imagem {
+    width: 90px;
+    height: auto;
+    position: relative;
+    right: 5px;
+    align-items: center; /* Alinhar verticalmente no centro */
+    background-image: url(../src/assets/background-pokeball.png);
+    background-repeat: no-repeat;
+    background-size: 65px;
+    background-position: center;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes moveDownUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.arrow {
+    position: fixed;
+    right: 0px;
+    bottom: 70px;
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.arrow:hover {
+    transform: scale(1.3);
+    animation: moveUpDown 0.3s infinite alternate;
+    opacity: 1;
+}
+
+.arrowB {
+    position: fixed;
+    right: 0px;
+    bottom: 20px;
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.arrowB:hover {
+    transform: scale(1.3);
+    animation: moveDownUp 0.3s infinite alternate;
+    opacity: 1;
+}
