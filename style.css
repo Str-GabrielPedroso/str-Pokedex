@@ -53,7 +53,7 @@ body {
     height: auto;
     position: relative;
     right: 5px;
-    align-items: center; /* Alinhar verticalmente no centro */
+    align-items: center;
     background-image: url(../src/assets/background-pokeball.png);
     background-repeat: no-repeat;
     background-size: 65px;
