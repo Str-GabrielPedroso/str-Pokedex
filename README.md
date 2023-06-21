@@ -1,0 +1,2 @@
+# str-Pokedex
+ Poketodos atualizado
